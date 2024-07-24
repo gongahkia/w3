@@ -19,7 +19,7 @@ Webscraper for movies in your area.
 | https://www.gv.com.sg/ | :white_check_mark: |
 | https://www.eaglewingscinematics.com.sg/ | :white_check_mark: |
 | https://theprojector.sg/ | :white_check_mark: |
-| https://fgcineplex.com.sg/movies | :x: |
+| https://fgcineplex.com.sg/movies | :white_check_mark: |
 | https://www.wecinemas.com.sg/ | :x: |
 | https://www.sinema.sg/ | :x: |
 | https://shaw.sg/ | :x: |
