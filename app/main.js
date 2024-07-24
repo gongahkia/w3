@@ -2,6 +2,9 @@
     // add npx install vite@latest here later to create react app here
 // 2. geolocation api -> add functionality fro that to lib
 // 3. create a github project site page so this can be run from any phone
+    // github might be DOGSHIT
+    // check out VERCEL
+    // check out NETLIFY
 // 4. add options to run locally
 // 5. make binary as small as possible
 // 6. make site sexy with react
