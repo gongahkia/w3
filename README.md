@@ -1,12 +1,10 @@
-# `we watch what`
+# `We Watch What`
 
 Webscraper for movies in your area.
 
 ![](asset/tyler.gif)
 
 --- 
-
-![](asset/man.jpg)
 
 ## Implement log
 
