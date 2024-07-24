@@ -1,4 +1,4 @@
-# `We Watch What`
+# `we watch what`
 
 Webscraper for movies in your area.
 
