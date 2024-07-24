@@ -18,8 +18,7 @@ Webscraper for movies in your area.
 | https://www.eaglewingscinematics.com.sg/ | :white_check_mark: |
 | https://theprojector.sg/ | :white_check_mark: |
 | https://fgcineplex.com.sg/movies | :white_check_mark: |
-| https://www.wecinemas.com.sg/ | :x: |
-| https://www.sinema.sg/ | :x: |
+| https://www.wecinemas.com.sg/ | :white_check_mark: |
 | https://shaw.sg/ | :x: |
 | https://www.cathaycineplexes.com.sg/ | :x: |
 
@@ -27,15 +26,15 @@ Webscraper for movies in your area.
 
 | site | scraping implementation |
 | :--- | :--- |
-| https://cinemaworld.asia/ | :x: |
 | https://mubi.com/en/sg | :x: |
+| https://www.sinema.sg/ | :x: |
+| https://cinemaworld.asia/ | :x: |
 
-2. is porting over code from python to js neccesary?
+2. make the readme look nicer
 3. geolocation api
 4. create a github project site page so can be run from any phone
-5. furnish readme.md
-6. add options to run locally
-7. expose REST API for cinemas so others can use
+5. add options to run locally
+6. expose REST API for cinemas so others can use
 
 REST API follows this general format, where each film object comprises of type [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). An array of film objects is returned.
 
