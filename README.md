@@ -2,6 +2,8 @@
 
 Webscraper for movies in your area.
 
+![](asset/tyler.gif)
+
 --- 
 
 ## Implement log
