@@ -18,7 +18,7 @@ Webscraper for movies in your area.
 | :--- | :--- |
 | https://www.gv.com.sg/ | :white_check_mark: |
 | https://www.eaglewingscinematics.com.sg/ | :white_check_mark: |
-| https://theprojector.sg/ | :x: |
+| https://theprojector.sg/ | :white_check_mark: |
 | https://fgcineplex.com.sg/movies | :x: |
 | https://www.wecinemas.com.sg/ | :x: |
 | https://www.sinema.sg/ | :x: |
@@ -44,6 +44,7 @@ REST API follows this general format, where each film object comprises of type [
 ```json
 {
     title: null
+    theme: null,
     description: null,
     duration: null
     rating: null,
