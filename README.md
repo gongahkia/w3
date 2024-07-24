@@ -8,6 +8,15 @@ Search engine for movies showing in your area.
 
 ## Coverage
   
+> [!NOTE]  
+> W3's website is under active development right now.  
+> Support for data scraped from other cinemas  
+> and streaming platforms will come in the future.  
+>  
+> It is not my focus right now.  
+>  
+> *\- Gabriel*  
+  
 W3 collates films by scraping webpages for the below cinemas.  
   
 | Site | Implementation log |
@@ -19,13 +28,6 @@ W3 collates films by scraping webpages for the below cinemas.
 | [WE Cinemas](https://www.wecinemas.com.sg/) | :white_check_mark: |
 | [Shaw Theatres](https://shaw.sg/) | :construction: |
 | [Cathay Cineplexes](https://www.cathaycineplexes.com.sg/) | :x: |
-  
-> [!NOTE]  
-> W3 is not under active development right now.  
-> Support for other cinemas and streaming platforms  
-> will come in the future.
-> 
-> *\- Gabriel* 
   
 ## Features
 
@@ -43,7 +45,7 @@ These are the features that W3 provides to distinguish itself from other product
     * No mobile app required to search for movies.
     * W3 is a web application, meaning no installation is required and it can run on any device that has a browser. 
 * API for public use
-    * Exposes an easy REST API for [these cinemas](#coverage).
+    * Exposes an easy-to-use REST API for [these cinemas](#coverage).
     * API documentation available [here](#api-usage).
 
 ## Development
@@ -76,19 +78,20 @@ Next, run the JavaScript file with the filepath `./lib/<cinemaName>.js` where `<
 ## API Usage
   
 * Each film object comprises of the below attributes.
-    * title
-    * theme
-    * description
-    * duration *(mins)*
-    * rating 
-    * bookTicketsUrl
-    * posterSrc
-* Each attribute is of the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) datatype.
+    * `title`: movie title
+    * `tags`: genre, categories, themes
+    * `description`: blurb, languages
+    * `duration`: in minutes
+    * `rating`: age guidelines
+    * `bookTicketsUrl`: ticket booking url
+    * `posterSrc`: img source url
+* Each attribute is of the [*String*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) datatype.
+* Attributes that were not found are assigned the [*null*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) value.
 
 ```json
 {
     title: null
-    theme: null,
+    tags: null,
     description: null,
     duration: null
     rating: null,
