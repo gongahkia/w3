@@ -6,6 +6,8 @@ Webscraper for movies in your area.
 
 --- 
 
+![](asset/man.jpg)
+
 ## Implement log
 
 1. websites to scrape 
@@ -15,13 +17,13 @@ Webscraper for movies in your area.
 | site | scraping implementation |
 | :--- | :--- |
 | https://www.gv.com.sg/ | :white_check_mark: |
-| https://www.cathaycineplexes.com.sg/ | :x: |
+| https://www.eaglewingscinematics.com.sg/ | :white_check_mark: |
 | https://theprojector.sg/ | :x: |
-| https://www.eaglewingscinematics.com.sg/ | :x: |
 | https://fgcineplex.com.sg/movies | :x: |
 | https://www.wecinemas.com.sg/ | :x: |
 | https://www.sinema.sg/ | :x: |
 | https://shaw.sg/ | :x: |
+| https://www.cathaycineplexes.com.sg/ | :x: |
 
 ### online streaming
 
@@ -36,5 +38,19 @@ Webscraper for movies in your area.
 5. furnish readme.md
 6. add options to run locally
 7. expose REST API for cinemas so others can use
+
+REST API follows this general format, where each film object comprises of type [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). An array of film objects is returned.
+
+```json
+{
+    title: null
+    description: null,
+    duration: null
+    rating: null,
+    bookTicketsUrl: null,
+    posterSrc: null
+}
+```
+
 8. make binary as small as possible
 9. make site sexy with react
