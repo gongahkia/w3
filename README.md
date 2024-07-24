@@ -9,21 +9,21 @@ Webscraper for movies in your area.
 ## Implement log
 
 1. websites to scrape 
-    * in-person screenings
+
+### in-person screenings
 
 | site | scraping implementation |
 | :--- | :--- |
-| https://shaw.sg/ | :x: |
-| https://www.gv.com.sg/ | :x: |
+| https://www.gv.com.sg/ | :white_check_mark: |
 | https://www.cathaycineplexes.com.sg/ | :x: |
 | https://theprojector.sg/ | :x: |
 | https://www.eaglewingscinematics.com.sg/ | :x: |
 | https://fgcineplex.com.sg/movies | :x: |
 | https://www.wecinemas.com.sg/ | :x: |
 | https://www.sinema.sg/ | :x: |
-| | :white_check_mark: |
+| https://shaw.sg/ | :x: |
 
-    * online streaming
+### online streaming
 
 | site | scraping implementation |
 | :--- | :--- |
@@ -37,5 +37,4 @@ Webscraper for movies in your area.
 6. add options to run locally
 7. expose REST API for cinemas so others can use
 8. make binary as small as possible
-9. optimisatins
-10. make site sexy with react
+9. make site sexy with react
