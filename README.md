@@ -10,17 +10,26 @@ Webscraper for movies in your area.
 
 1. websites to scrape 
     * in-person screenings
-        * https://shaw.sg/
-        * https://www.gv.com.sg/
-        * https://www.cathaycineplexes.com.sg/
-        * https://theprojector.sg/
-        * https://www.eaglewingscinematics.com.sg/
-        * https://fgcineplex.com.sg/movies
-        * https://www.wecinemas.com.sg/
-        * https://www.sinema.sg/
+
+| site | scraping implementation |
+| :--- | :--- |
+| https://shaw.sg/ | :x: |
+| https://www.gv.com.sg/ | :x: |
+| https://www.cathaycineplexes.com.sg/ | :x: |
+| https://theprojector.sg/ | :x: |
+| https://www.eaglewingscinematics.com.sg/ | :x: |
+| https://fgcineplex.com.sg/movies | :x: |
+| https://www.wecinemas.com.sg/ | :x: |
+| https://www.sinema.sg/ | :x: |
+| | :white_check_mark: |
+
     * online streaming
-        * https://cinemaworld.asia/
-        * https://mubi.com/en/sg
+
+| site | scraping implementation |
+| :--- | :--- |
+| https://cinemaworld.asia/ | :x: |
+| https://mubi.com/en/sg | :x: |
+
 2. is porting over code from python to js neccesary?
 3. geolocation api
 4. create a github project site page so can be run from any phone
