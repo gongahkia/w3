@@ -1,42 +1,89 @@
+![](https://img.shields.io/badge/w3_1.0-passing-green)
+
 # `We Watch What`
 
-Webscraper for movies in your area.
+Search engine for movies showing in your area.  
 
 ![](asset/tyler.gif)
 
---- 
-
-## Implement log
-
-1. websites to scrape 
-
-### in-person screenings
-
-| site | scraping implementation |
+## Coverage
+  
+W3 collates films by scraping webpages for the below cinemas.  
+  
+| Site | Implementation log |
 | :--- | :--- |
-| https://www.gv.com.sg/ | :white_check_mark: |
-| https://www.eaglewingscinematics.com.sg/ | :white_check_mark: |
-| https://theprojector.sg/ | :white_check_mark: |
-| https://fgcineplex.com.sg/movies | :white_check_mark: |
-| https://www.wecinemas.com.sg/ | :white_check_mark: |
-| https://shaw.sg/ | :x: |
-| https://www.cathaycineplexes.com.sg/ | :x: |
+| [Golden Village](https://www.gv.com.sg/) | :white_check_mark: |
+| [Eagle Wings Cinematics](https://www.eaglewingscinematics.com.sg/) | :white_check_mark: |
+| [The Projector](https://theprojector.sg/) | :white_check_mark: |
+| [Filmgarde Cineplexes](https://fgcineplex.com.sg/movies) | :white_check_mark: |
+| [WE Cinemas](https://www.wecinemas.com.sg/) | :white_check_mark: |
+| [Shaw Theatres](https://shaw.sg/) | :construction: |
+| [Cathay Cineplexes](https://www.cathaycineplexes.com.sg/) | :x: |
+  
+> [!NOTE]  
+> W3 is not under active development right now.  
+> Support for other cinemas and streaming platforms  
+> will come in the future.
+> 
+> *\- Gabriel* 
+  
+## Features
 
-### online streaming
+These are the features that W3 provides to distinguish itself from other products in the market.
 
-| site | scraping implementation |
-| :--- | :--- |
-| https://mubi.com/en/sg | :x: |
-| https://www.sinema.sg/ | :x: |
-| https://cinemaworld.asia/ | :x: |
+* `WeWatchWhat` website
+    * Single unified platform that aggregates all movies showing on the current day from multiple cinemas.
+    * Shows all essential details about a film at a glance.
+    * Filters movies based on rating, duration, cinema location, languages and theme.
+    * ***We watch what*** button that randomly chooses a movie to watch.
+* Bookmarking
+    * Films can be bookmarked for later reference.
+    * Filters are stored in query params such that a specific search.
+* Web access  
+    * No mobile app required to search for movies.
+    * W3 is a web application, meaning no installation is required and it can run on any device that has a browser. 
+* API for public use
+    * Exposes an easy REST API for [these cinemas](#coverage).
+    * API documentation available [here](#api-usage).
 
-2. make the readme look nicer
-3. geolocation api
-4. create a github project site page so can be run from any phone
-5. add options to run locally
-6. expose REST API for cinemas so others can use
-
-REST API follows this general format, where each film object comprises of type [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). An array of film objects is returned.
+## Development
+  
+To run W3 locally, you can run the [`Makefile`](#install-via-makefile) or [do it yourself](#do-it-yourself).  
+  
+### Install via Makefile  
+  
+```console
+$ make build
+$ cd lib
+$ node <cinemaName>.js
+```
+  
+### Do it yourself  
+  
+First, install [NVM](https://github.com/nvm-sh/nvm), [npm](https://www.npmjs.com/) and [Node.js](https://nodejs.org/en).  
+  
+Then, install [playwright](https://playwright.dev/) as a dependancy.  
+  
+Next, run the JavaScript file with the filepath `./lib/<cinemaName>.js` where `<cinemaName>` is one of the following.  
+  
+* weCinemas  
+* theProjector  
+* shawTheatres  
+* goldenVillage  
+* filmgardeCineplexes  
+* eagleWingsCinematics  
+  
+## API Usage
+  
+* Each film object comprises of the below attributes.
+    * title
+    * theme
+    * description
+    * duration *(mins)*
+    * rating 
+    * bookTicketsUrl
+    * posterSrc
+* Each attribute is of the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) datatype.
 
 ```json
 {
@@ -49,6 +96,3 @@ REST API follows this general format, where each film object comprises of type [
     posterSrc: null
 }
 ```
-
-8. make binary as small as possible
-9. make site sexy with react
