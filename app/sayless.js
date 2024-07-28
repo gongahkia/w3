@@ -1,3 +1,4 @@
+// 0. be a psycho and debug main.js and react app linking basically
 // 1. add content here mainly to call the lib util files created in lib;;; i want to still make a react website?
     // add npx install vite@latest here later to create react app here
 // 2. geolocation api -> add functionality fro that to lib
