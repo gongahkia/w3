@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-export default function App() {
+const App = () => {
 
     return (
+        <p>So we watch what?</p>
+    );
+};
 
-      <p>So we watch what?</p>
-
-    )
-
-}
+export default App;

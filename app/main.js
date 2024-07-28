@@ -1,14 +1,59 @@
-// 1. add content here mainly to call the lib util files created in lib;;; i want to still make a react website?
-    // add npx install vite@latest here later to create react app here
-// 2. geolocation api -> add functionality fro that to lib
-// 3. create a github project site page so this can be run from any phone
-    // github might be DOGSHIT
-    // check out VERCEL
-    // check out NETLIFY
-// 4. add options to run locally
-// 5. make binary as small as possible
-// 6. make site sexy with react
-// 7. add a RANDOMISED 'WE WATCH WHAT' button that allows the spinning of a wheel and randomly chooses a movie to watch so that users dont need choose
-    // optionally, as astin suggested
-    // allow for specific movies to be within the random basket
-    // sortt the random basket by all existing query params before spinning
+import { extractFilmsEwc as extractFilmsEwc } from '../lib/eagleWingsCinematics.js';
+import { extractFilmsFgc as extractFilmsFgc } from '../lib/filmgardeCineplexes.js';
+import { extractFilmsGv as extractFilmsGv } from '../lib/goldenVillage.js';
+import { extractFilmsTp as extractFilmsTp } from '../lib/theProjector.js';
+import { extractFilmsWe as extractFilmsWe } from '../lib/weCinemas.js';
+
+async function extractAllFilms() {
+
+    const ewcUrl = "https://www.eaglewingscinematics.com.sg/movies#openModal";
+    const fgUrl = "https://fgcineplex.com.sg/movies";
+    const gvUrl = "https://www.gv.com.sg/GVMovies";
+    const tpUrl = "https://theprojector.sg/films";
+    const weUrl = `https://www.wecinemas.com.sg/buy-ticket.aspx?movieid=&date=${getCurrentDate()}`;
+
+    try {
+
+        console.time("time to extract films");
+
+        const [ewcFilms, fgcFilms, gvFilms, tpFilms, weFilms] = await Promise.all([
+            extractFilmsEwc(ewcUrl),
+            extractFilmsFgc(fgUrl),
+            extractFilmsGv(gvUrl),
+            extractFilmsTp(tpUrl),
+            extractFilmsWe(weUrl)
+        ]);
+
+        console.timeEnd("time to extract films");
+
+        return {
+            eagleWingsCinematicsArray: { ewcFilms },
+            filmGardeCineplexesArray: { fgcFilms },
+            goldenVillageArray: { gvFilms },
+            theProjectorArray: { tpFilms },
+            weCinemasArray: { weFilms }
+        };
+
+    } catch (error) {
+        console.error('error reached extracting films:', error);
+        throw error;
+    }
+
+}
+
+function getCurrentDate() {
+    const today = new Date();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const year = today.getFullYear();
+    return `${month}/${day}/${year}`;
+}
+
+export { extractAllFilms };
+
+// ----- EXECUTION CODE -----
+    // - for testing
+    // - actual usage to be called from /app/src/App.jsx
+
+console.log("~ w3 is collecting your films now ~");
+extractAllFilms();
