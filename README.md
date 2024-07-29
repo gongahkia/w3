@@ -34,6 +34,14 @@ W3 collates films by scraping webpages for the below cinemas.
 
 These are the features that W3 provides to distinguish itself from other products in the market.
 
+* API for public use
+    * Exposes an easy-to-use REST API for [these cinemas](#coverage).
+    * API documentation available [here](#api-usage).
+
+## Contribute
+
+W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and contribute. Below are features that W3 aims to implement in the future. 
+
 * `WeWatchWhat` website
     * Single unified platform that aggregates all movies showing on the current day from multiple cinemas.
     * Shows all essential details about a film at a glance.
@@ -45,9 +53,6 @@ These are the features that W3 provides to distinguish itself from other product
 * Web access  
     * No mobile app required to search for movies.
     * W3 is a web application, meaning no installation is required and it can run on any device that has a browser. 
-* API for public use
-    * Exposes an easy-to-use REST API for [these cinemas](#coverage).
-    * API documentation available [here](#api-usage).
 
 ## Development
   
