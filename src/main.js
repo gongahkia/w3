@@ -1,8 +1,8 @@
-import { extractFilmsEwc as extractFilmsEwc } from '../lib/eagleWingsCinematics.js';
-import { extractFilmsFgc as extractFilmsFgc } from '../lib/filmgardeCineplexes.js';
-import { extractFilmsGv as extractFilmsGv } from '../lib/goldenVillage.js';
-import { extractFilmsTp as extractFilmsTp } from '../lib/theProjector.js';
-import { extractFilmsWe as extractFilmsWe } from '../lib/weCinemas.js';
+import { extractFilmsEwc } from '../lib/eagleWingsCinematics.js';
+import { extractFilmsFgc } from '../lib/filmgardeCineplexes.js';
+import { extractFilmsGv } from '../lib/goldenVillage.js';
+import { extractFilmsTp } from '../lib/theProjector.js';
+import { extractFilmsWe } from '../lib/weCinemas.js';
 
 async function extractAllFilms() {
 
