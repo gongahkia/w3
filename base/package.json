@@ -1,0 +1,15 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^16.4.0",
+    "playwright": "^1.12.0"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.3.5"
+  }
+}
