@@ -1,13 +1,3 @@
-> [!NOTE]  
-> W3's website is under active  
-> development right now.  
->  
-> Support for data scraped from other  
-> cinemas and streaming platforms  
-> might come in the far future.  
->  
-> *\- Gabriel*  
-
 ![](https://img.shields.io/badge/w3_1.0-passing-green)
 
 # `We Watch What`
