@@ -65,7 +65,13 @@ Copy and paste the following command into your CLI.
 ```console
 $ npm install && cd lib && npm install && cd .. && node server.js
 ```
-  
+
+After 20-30 seconds, you should see the below in your CLI.
+
+![](asset/reference/screenshot1.png)
+
+Then open `http://localhost:3000/` in your browser of choice.
+
 ### Install via Makefile  
 
 Copy and paste the following command into your CLI.
