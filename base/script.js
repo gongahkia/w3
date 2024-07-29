@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             document.getElementById('film-data').innerHTML = `
-                ${formatFilmData(data.eagleWingsCinematicsArray, 'Eagle Wings Cinematics')}
+                ${formatFilmData(data.eagleWingsCinematicsArray, 'EagleWings Cinematics')}
                 ${formatFilmData(data.goldenVillageArray, 'Golden Village')}
                 ${formatFilmData(data.theProjectorArray, 'The Projector')}
-                ${formatFilmData(data.weCinemasArray, 'We Cinemas')}
-                ${formatFilmData(data.filmGardeCineplexesArray, 'Film Garde Cineplexes')}
+                ${formatFilmData(data.weCinemasArray, 'WE Cinemas')}
+                ${formatFilmData(data.filmGardeCineplexesArray, 'Filmgarde Cineplexes')}
             `;
         } catch (error) {
             console.error('Error fetching film data:', error);
