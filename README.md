@@ -60,11 +60,15 @@ To work with W3, you can optionally
   
 ### Local server
   
+Copy and paste the following command into your CLI.
+
 ```console
-$ node server.js
+$ npm install && cd lib && npm install && cd .. && node server.js
 ```
   
 ### Install via Makefile  
+
+Copy and paste the following command into your CLI.
   
 ```console
 $ make build
