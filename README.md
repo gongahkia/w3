@@ -1,5 +1,5 @@
 > [!NOTE]  
-> W3's website is under active 
+> W3's website is under active  
 > development right now.  
 >  
 > Support for data scraped from other  
@@ -14,7 +14,13 @@
 
 Search engine for movies showing in your area.  
 
-![](asset/tyler.gif)
+![](asset/memes/tyler.gif)
+
+## Screenshots
+
+![](asset/screenshot/screenshot1.png)
+![](asset/screenshot/screenshot2.png)
+![](asset/screenshot/screenshot3.png)
 
 ## Coverage
   
@@ -37,11 +43,6 @@ These are the features that W3 provides to distinguish itself from other product
 * `WeWatchWhat` website
     * Single unified platform that aggregates all movies showing on the current day from multiple cinemas.
     * Shows all essential details about a film at a glance.
-    * Filters movies based on rating, duration, cinema location, languages and theme.
-    * ***We watch what*** button that randomly chooses a movie to watch.
-* Bookmarking
-    * Films can be bookmarked for later reference.
-    * Filters are stored in query params such that a specific search.
 * Web access  
     * No mobile app required to search for movies.
     * W3 is a web application, meaning no installation is required and it can run on any device that has a browser. 
@@ -53,7 +54,7 @@ These are the features that W3 provides to distinguish itself from other product
   
 To work with W3, you can optionally
 
-* run the W3 server [locally](#local-server)  
+* run the W3 server [locally](#local-server) at `localhost:3000`
 * run the [`Makefile`](#install-via-makefile) to automatically install dependancies  
 * do dependancy installation [yourself](#do-it-yourself)  
   
@@ -85,7 +86,15 @@ $ node <cinemaName>.js
   
 ## Contribute
 
-W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and contribute.  
+W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and contribute. Below are features that W3 aims to implement in the future. 
+
+* Bookmarking
+    * Films can be bookmarked for later reference.
+    * Custom filters can also be bookmarked and stored in query params.  
+* Filtering
+    * Filters movies based on rating, duration, cinema location, languages and theme.
+* ***We watch what*** button
+    * Button that randomly chooses a movie to watch.
 
 ## API Usage
   
