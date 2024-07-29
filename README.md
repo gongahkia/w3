@@ -53,7 +53,7 @@ To work with W3, you can optionally
 Copy and paste the following command into your CLI.
 
 ```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && nvm install 20.16.0 && npm install playwright && npm install express && npx playwright install && npm install && cd lib && npm install && cd .. && node server.js
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && nvm install 20.16.0 && npm install playwright && npm install express && npx playwright install-deps && npx --v && npx playwright install && npm install && cd lib && npm install && cd .. && node server.js
 ```
 
 After 20-30 seconds, you should see the below in your CLI.
