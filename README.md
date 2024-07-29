@@ -63,7 +63,7 @@ To work with W3, you can optionally
 Copy and paste the following command into your CLI.
 
 ```console
-$ npm install && cd lib && npm install && cd .. && node server.js
+$ nvm install 20.16.0 && npm install playwright && npm install express && npx playwright install && npm install && cd lib && npm install && cd .. && node server.js
 ```
 
 After 20-30 seconds, you should see the below in your CLI.
