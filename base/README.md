@@ -1,5 +1,5 @@
-# base frontend
+# base browser frontend
 
 * made with vanilla JS, HTML and CSS
-* deployed with vite vanilla
+* deployed with handwritten server
 * for archival purposes

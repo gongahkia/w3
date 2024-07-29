@@ -56,7 +56,18 @@ W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en
 
 ## Development
   
-To run W3 locally, you can run the [`Makefile`](#install-via-makefile) or [do it yourself](#do-it-yourself).  
+To work with W3, you can optionally
+
+* run the W3 server [locally](#local-server)  
+* run the [`Makefile`](#install-via-makefile) to automatically install dependancies  
+* do dependancy installation [yourself](#do-it-yourself)  
+  
+  
+### Local server
+  
+```console
+$ node server.js
+```
   
 ### Install via Makefile  
   
@@ -68,18 +79,15 @@ $ node <cinemaName>.js
   
 ### Do it yourself  
   
-First, install [NVM](https://github.com/nvm-sh/nvm), [npm](https://www.npmjs.com/) and [Node.js](https://nodejs.org/en).  
-  
-Then, install [playwright](https://playwright.dev/) as a dependancy.  
-  
-Next, run the JavaScript file with the filepath `./lib/<cinemaName>.js` where `<cinemaName>` is one of the following.  
-  
-* weCinemas  
-* theProjector  
-* shawTheatres  
-* goldenVillage  
-* filmgardeCineplexes  
-* eagleWingsCinematics  
+1. Install [NVM](https://github.com/nvm-sh/nvm), [npm](https://www.npmjs.com/) and [Node.js](https://nodejs.org/en).  
+2. Install [playwright](https://playwright.dev/) as a dependancy.  
+3. Run the JavaScript file with the filepath `./lib/<cinemaName>.js` where `<cinemaName>` is one of the following.  
+    * weCinemas  
+    * theProjector  
+    * shawTheatres  
+    * goldenVillage  
+    * filmgardeCineplexes  
+    * eagleWingsCinematics  
   
 ## API Usage
   

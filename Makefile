@@ -7,6 +7,7 @@ build:
 	@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash  
 	@ nvm install 20.16.0  
 	@ npm install playwright  
+	@ npm install express
 	@ npm install http-server
 	@ npm install --save-dev vite
 	@ npx playwright install  

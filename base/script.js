@@ -1,55 +1,34 @@
-import { extractFilmsEwc } from '../lib/eagleWingsCinematics.js';
-// import { extractFilmsFgc } from '../lib/filmgardeCineplexes.js';
-// import { extractFilmsGv } from '../lib/goldenVillage.js';
-// import { extractFilmsTp } from '../lib/theProjector.js';
-// import { extractFilmsWe } from '../lib/weCinemas.js';
+// ----- EXECUTION CODE -----
 
-async function extractAllFilms() {
+document.addEventListener('DOMContentLoaded', () => {
 
-    const ewcUrl = "https://www.eaglewingscinematics.com.sg/movies#openModal";
-    // const fgUrl = "https://fgcineplex.com.sg/movies";
-    // const gvUrl = "https://www.gv.com.sg/GVMovies";
-    // const tpUrl = "https://theprojector.sg/films";
-    // const weUrl = `https://www.wecinemas.com.sg/buy-ticket.aspx?movieid=&date=${getCurrentDate()}`;
+// ----- FUNCTION DEFINITION -----
 
-    try {
-
-        console.time("time to extract films");
-
-        const [ewcFilms] = await Promise.all([
-            extractFilmsEwc(ewcUrl),
-        ]);
-
-        // const [ewcFilms, fgcFilms, gvFilms, tpFilms, weFilms] = await Promise.all([
-        //     extractFilmsEwc(ewcUrl),
-        //     extractFilmsFgc(fgUrl),
-        //     extractFilmsGv(gvUrl),
-        //     extractFilmsTp(tpUrl),
-        //     extractFilmsWe(weUrl)
-        // ]);
-
-        console.timeEnd("time to extract films");
-
-        return {
-            eagleWingsCinematicsArray: { ewcFilms },
-        };
-
-    } catch (error) {
-        console.error('error reached extracting films:', error);
-        throw error;
+    async function fetchFilmData() {
+        try {
+            const response = await fetch('/api/films');
+            const data = await response.json();
+            document.getElementById('film-data').innerHTML = `
+                <h2>Eagle Wings Cinematics</h2>
+                <pre>${JSON.stringify(data.eagleWingsCinematicsArray, null, 2)}</pre>
+                <h2>Golden Village</h2>
+                <pre>${JSON.stringify(data.goldenVillageArray, null, 2)}</pre>
+                <h2>The Projector</h2>
+                <pre>${JSON.stringify(data.theProjectorArray, null, 2)}</pre>
+                <h2>We Cinemas</h2>
+                <pre>${JSON.stringify(data.weCinemasArray, null, 2)}</pre>
+                <h2>Film Garde Cineplexes</h2>
+                <pre>${JSON.stringify(data.filmGardeCineplexesArray, null, 2)}</pre>
+            `;
+        } catch (error) {
+            console.error('Error fetching film data:', error);
+            document.getElementById('film-data').innerHTML = 'Failed to load film data.';
+        }
     }
-
-}
-
-function getCurrentDate() {
-    const today = new Date();
-    const month = String(today.getMonth() + 1).padStart(2, '0');
-    const day = String(today.getDate()).padStart(2, '0');
-    const year = today.getFullYear();
-    return `${month}/${day}/${year}`;
-}
 
 // ----- EXECUTION CODE -----
 
-console.log("~ w3 testing base ~");
-extractAllFilms();
+    console.log("~ w3 testing base ~");
+    fetchFilmData();
+
+});
