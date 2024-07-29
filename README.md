@@ -1,6 +1,6 @@
 > [!NOTE]  
-> W3 is not under active development  
-> right now.  
+> W3's website is under active 
+> development right now.  
 >  
 > Support for data scraped from other  
 > cinemas and streaming platforms  
@@ -34,14 +34,6 @@ W3 collates films by scraping webpages for the below cinemas.
 
 These are the features that W3 provides to distinguish itself from other products in the market.
 
-* API for public use
-    * Exposes an easy-to-use REST API for [these cinemas](#coverage).
-    * API documentation available [here](#api-usage).
-
-## Contribute
-
-W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and contribute. Below are features that W3 aims to implement in the future. 
-
 * `WeWatchWhat` website
     * Single unified platform that aggregates all movies showing on the current day from multiple cinemas.
     * Shows all essential details about a film at a glance.
@@ -53,6 +45,9 @@ W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en
 * Web access  
     * No mobile app required to search for movies.
     * W3 is a web application, meaning no installation is required and it can run on any device that has a browser. 
+* API for public use
+    * Exposes an easy-to-use REST API for [these cinemas](#coverage).
+    * API documentation available [here](#api-usage).
 
 ## Development
   
@@ -61,7 +56,6 @@ To work with W3, you can optionally
 * run the W3 server [locally](#local-server)  
 * run the [`Makefile`](#install-via-makefile) to automatically install dependancies  
 * do dependancy installation [yourself](#do-it-yourself)  
-  
   
 ### Local server
   
@@ -89,6 +83,10 @@ $ node <cinemaName>.js
     * filmgardeCineplexes  
     * eagleWingsCinematics  
   
+## Contribute
+
+W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and contribute.  
+
 ## API Usage
   
 * Each film object comprises of the below attributes.
