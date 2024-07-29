@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "prestart": "cd lib && npm install && cd ..",
-    "start": "npm run prestart && node server.js"
+    "prestart": "cd lib && npm install && cd .. && npm install",
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.19.2"
