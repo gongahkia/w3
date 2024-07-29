@@ -5,7 +5,7 @@ build:
 	@ nvm install 20.16.0  
 	@ npm install playwright  
 	@ npx playwright install  
-	@ npm install
+	@ cd lib && npm install
 
 clean:
 	@rm -rf .git .gitignore README.md
