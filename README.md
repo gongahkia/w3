@@ -1,3 +1,13 @@
+> [!NOTE]  
+> W3 is not under active development  
+> right now.  
+>  
+> Support for data scraped from other  
+> cinemas and streaming platforms  
+> might come in the far future.  
+>  
+> *\- Gabriel*  
+
 ![](https://img.shields.io/badge/w3_1.0-passing-green)
 
 # `We Watch What`
@@ -7,15 +17,6 @@ Search engine for movies showing in your area.
 ![](asset/tyler.gif)
 
 ## Coverage
-  
-> [!NOTE]  
-> W3's website is under active development right now.  
-> Support for data scraped from other cinemas  
-> and streaming platforms will come in the future.  
->  
-> It is not my focus right now.  
->  
-> *\- Gabriel*  
   
 W3 collates films by scraping webpages for the below cinemas.  
   
