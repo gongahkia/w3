@@ -2,7 +2,7 @@
 
 # `We Watch What`
 
-Search engine for movies showing in your area.  
+Find movies to watch in Singapore.
 
 ![](asset/memes/tyler.gif)
 
