@@ -6,12 +6,6 @@ Find movies to watch in Singapore.
 
 ![](asset/memes/tyler.gif)
 
-## Screenshots
-
-![](asset/screenshot/screenshot1.png)
-![](asset/screenshot/screenshot2.png)
-![](asset/screenshot/screenshot3.png)
-
 ## Coverage
   
 W3 collates films by scraping webpages for the below cinemas.  
@@ -120,3 +114,9 @@ W3 is open-source. Feel free to [open a pull request](https://docs.github.com/en
     posterSrc: null
 }
 ```
+
+## Screenshots
+
+![](asset/screenshot/screenshot1.png)
+![](asset/screenshot/screenshot2.png)
+![](asset/screenshot/screenshot3.png)
